@@ -163,7 +163,7 @@ const Quiz: React.FC = () => {
     };
 
     const goHome = () => {
-        navigate('/'); // Navega de regreso al HomeScreen
+        navigate('/quizzmaster'); // Navega de regreso al HomeScreen
     };
     return (
         <div className='quiz-container'>

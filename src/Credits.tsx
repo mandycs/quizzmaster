@@ -6,7 +6,7 @@ const Credits: React.FC = () => {
     const navigate = useNavigate();
 
     const goHome = () => {
-        navigate('/');
+        navigate('/quizzmaster');
     }
     return (
         <div className="credits-container">
