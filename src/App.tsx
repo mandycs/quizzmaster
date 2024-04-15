@@ -1,25 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomeScreen from './HomeScreen';
+import Quizz from './Quizz'; // Asegúrate de importar el componente Quiz
+import Credits from './Credits'; // Asegúrate de importar el componente Credits
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/quizz" element={<Quizz />} />
+        <Route path="/credits" element={<Credits />} />
+      </Routes>
+    </Router>
   );
 }
 

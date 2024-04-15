@@ -1,0 +1,60 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    text-align: center;
+    padding-top: 20px; /* Añade un padding superior para elevar todo el contenido */
+}
+
+.title {
+    margin-bottom: 20px; /* Puedes ajustar esto para más espacio */
+    flex-grow: 0; /* Evita que el título crezca */
+    align-self: flex-start; /* Alinea el título hacia el comienzo del contenedor */
+    width: 100%; /* Ocupa todo el ancho */
+    padding-top: 10px; /* Espacio adicional en la parte superior */
+}
+
+.content-container {
+    display: flex;
+    width: 100%; /* Asegura que usa todo el ancho del contenedor padre */
+    flex-grow: 1; /* Permite que el contenedor crezca para llenar el espacio disponible */
+    justify-content: space-between;
+}
+
+.buttons-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.character-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.character-container img {
+    width: 300px; /* Ajusta el tamaño según tus necesidades */
+}
+
+.start-button, .credits-button {
+    margin: 10px;
+    padding: 20px 40px;
+    border: none;
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    font-size: 1.5em;
+}
+
+.start-button:hover , .credits-button:hover{
+    background-color: #005f86;
+}

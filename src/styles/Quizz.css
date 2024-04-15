@@ -1,0 +1,123 @@
+/* Quiz.css */
+.quiz-container {
+    padding: 20px;
+    margin: 0;
+    height: 100vh;
+    /* Altura total de la ventana de visualización */
+    width: 100vw;
+    /* Ancho total de la ventana de visualización */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* Distribuye el espacio alrededor de los elementos internos */
+    align-items: center;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    box-shadow: none;
+    color: #fff;
+    text-align: center;
+}
+
+.question-section {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 40px;
+    /* Margen superior más significativo para mantener esto en la parte superior */
+}
+
+.question-count {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.question-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    /* Espacio después del texto de la pregunta */
+}
+
+.answer-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results-section {
+    font-size: 20px;
+    color: #4CAF50;
+    width: 100%;
+    max-width: 600px;
+}
+
+.life-counter {
+    font-size: 20px;
+    color: #4CAF50;
+    /* Rojo para indicar la vida, pero puedes elegir cualquier color */
+    margin-bottom: 20px;
+}
+
+.continue-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.continue-button:hover {
+    background-color: #0056b3;
+}
+
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    /* Asegúrate de que esté sobre otros elementos */
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+.explanation-section {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: #fff8e1;
+    border-left: 5px solid #007bff;
+    font-style: italic;
+    color: #333;
+    max-width: 80%;
+    word-wrap: break-word;
+    text-align: justify;
+    box-sizing: border-box;
+}

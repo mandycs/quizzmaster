@@ -1,0 +1,55 @@
+.credits-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    text-align: center;
+    padding-top: 20px; /* Añ
+}
+
+.credits-container h1 {
+    font-size: 24px; /* Tamaño coherente con otros títulos */
+    margin-bottom: 15px;
+}
+
+.credits-container p, .credits-container li {
+    font-size: 16px; /* Tamaño de texto uniforme */
+}
+
+.credits-container ul {
+    list-style-type: none; /* Sin viñetas para una apariencia limpia */
+    padding: 0;
+}
+
+/* Estilos para botones si es necesario */
+.button {
+    background-color: #4CAF50; /* Color principal para botones */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049; /* Efecto hover para el botón */
+}
+
+.home-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
